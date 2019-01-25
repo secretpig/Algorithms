@@ -31,8 +31,12 @@ def dfs(A,start):
                 stack[-1] += ch
             else:
                 stack = [s + ch for s in stack]
+        print(i)
         i += 1
 
 a = 'ab{c{d,e}{f,g}}h'
 parseString(a)
 
+if __name__ == "__main__":
+    # execute only if run as a script
+    main()
