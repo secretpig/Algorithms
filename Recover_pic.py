@@ -17,7 +17,7 @@ def construct(x1,x2,y1,y2):
         topL = construct(x1,mid_x,y1,mid_y)
         topR = construct(x1,mid_x,mid_y + 1,y2)
         bottomL = construct(mid_x + 1,x2,y1,mid_y)
-        bottomR = construct(midx_x + 1,x2,mid_y + 1,y2)
+        bottomR = construct(mid_x + 1,x2,mid_y + 1,y2)
         root.topL = topL
         root.topR = topR
         root.bottomL = bottomL
